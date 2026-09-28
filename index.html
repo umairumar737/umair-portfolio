@@ -865,6 +865,25 @@
             z-index: 2;
         }
 
+        /* ===== SELECTED WORK IMAGE SYSTEM ===== */
+        .project-visual.project-image {
+            text-decoration: none;
+        }
+
+        .project-visual.project-image img {
+            object-position: center center;
+        }
+
+        .project-visual.project-image .visual-label {
+            text-shadow: 0 2px 18px rgba(0,0,0,.45);
+        }
+
+        .project-visual.project-image .visual-url {
+            background: rgba(10,10,10,.22);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
         @media(max-width:800px) {
 
             .cursor-dot,
@@ -939,6 +958,14 @@
 
             .project-visual {
                 min-height: 390px
+            }
+
+            .project-visual.project-image img {
+                object-position: center center;
+            }
+
+            .project-visual.project-image .visual-label {
+                font-size: clamp(38px, 14vw, 72px);
             }
 
             .project-info h3 {
@@ -1111,9 +1138,11 @@
                                     Pro</span><span class="tag">Responsive</span><span class="tag">Lead Gen</span></div>
                         </div><a class="project-link" href="#contact">Project details <span>↗</span></a>
                     </div>
-                    <div class="project-visual" style="--accent:#1976ff"><span
-                            class="visual-label">BITS<br>GROOVE</span><span class="visual-url">Courier ·
-                            Logistics</span></div>
+                    <a class="project-visual project-image" href="#contact" rel="noreferrer" style="--accent:#1976ff">
+                        <img src="images/bitsgroove.png" alt="BitsGroove courier and logistics website" loading="lazy" decoding="async">
+                        <span class="visual-label">BITS<br>GROOVE</span>
+                        <span class="visual-url">Courier · Logistics</span>
+                    </a>
                 </article>
                 <article class="project reveal">
                     <div class="project-info">
@@ -1127,10 +1156,12 @@
                             </div>
                         </div><a class="project-link" href="https://celinefurnishings.co.uk/" target="_blank"
                             rel="noreferrer">Visit live project <span>↗</span></a>
-                    </div><a class="project-visual" href="https://celinefurnishings.co.uk/" target="_blank"
-                        rel="noreferrer" style="--accent:#b89467"><span
-                            class="visual-label">CELINE<br>FURNISHINGS</span><span class="visual-url">Shopify ·
-                            UK</span></a>
+                    </div><a class="project-visual project-image" href="https://celinefurnishings.co.uk/" target="_blank"
+                        rel="noreferrer" style="--accent:#b89467">
+                        <img src="images/celine-furnishing.png" alt="Celine Furnishings Shopify furniture store" loading="lazy" decoding="async">
+                        <span class="visual-label">CELINE<br>FURNISHINGS</span>
+                        <span class="visual-url">Shopify · UK</span>
+                    </a>
                 </article>
                 <article class="project reveal">
                     <div class="project-info">
@@ -1143,9 +1174,12 @@
                                     class="tag">Content</span></div>
                         </div><a class="project-link" href="https://thebookmart.pk/" target="_blank"
                             rel="noreferrer">Visit live project <span>↗</span></a>
-                    </div><a class="project-visual" href="https://thebookmart.pk/" target="_blank" rel="noreferrer"
-                        style="--accent:#5d7da8"><span class="visual-label">THE<br>BOOK MART</span><span
-                            class="visual-url">E-commerce · PK</span></a>
+                    </div><a class="project-visual project-image" href="https://thebookmart.pk/" target="_blank" rel="noreferrer"
+                        style="--accent:#5d7da8">
+                        <img src="images/the-book-mart.png" alt="The Book Mart online bookstore website" loading="lazy" decoding="async">
+                        <span class="visual-label">THE<br>BOOK MART</span>
+                        <span class="visual-url">E-commerce · PK</span>
+                    </a>
                 </article>
             </div>
         </section>
