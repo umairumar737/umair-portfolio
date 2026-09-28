@@ -815,6 +815,56 @@
             }
         }
 
+
+        /* ===== VINE TAXIS PROJECT IMAGE ===== */
+        .project-visual.project-image {
+            isolation: isolate;
+            background: #111;
+            cursor: pointer;
+        }
+
+        .project-visual.project-image::before {
+            display: none;
+        }
+
+        .project-visual.project-image::after {
+            inset: 0;
+            border: 0;
+            transform: none;
+            background: linear-gradient(180deg, rgba(0,0,0,.02) 0%, rgba(0,0,0,.05) 42%, rgba(0,0,0,.72) 100%);
+            z-index: -1;
+            transition: background .6s ease;
+        }
+
+        .project-visual.project-image img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            z-index: -2;
+            transform: scale(1.015);
+            transition: transform 1.1s cubic-bezier(.16,1,.3,1), filter 1.1s ease;
+            filter: saturate(.94) contrast(1.02);
+        }
+
+        .project-visual.project-image:hover img {
+            transform: scale(1.065);
+            filter: saturate(1.04) contrast(1.04);
+        }
+
+        .project-visual.project-image:hover::after {
+            background: linear-gradient(180deg, rgba(0,0,0,.02) 0%, rgba(0,0,0,.10) 40%, rgba(0,0,0,.78) 100%);
+        }
+
+        .project-visual.project-image .visual-label,
+        .project-visual.project-image .visual-url {
+            position: relative;
+            z-index: 2;
+        }
+
         @media(max-width:800px) {
 
             .cursor-dot,
@@ -1042,7 +1092,7 @@
                     </div><a class="project-visual project-image" href="https://vinetaxis.com/" target="_blank"
                         rel="noreferrer" style="--accent:#c39e57">
 
-                        <img src="images/vine-taxis.png" alt="Vine Taxis luxury taxi and transfer website">
+                        <img src="images/vine-taxis.jpg" alt="Vine Taxis luxury taxi and transfer website" loading="lazy" decoding="async">
 
                         <div class="project-image-overlay"></div>
 
